@@ -70,11 +70,11 @@ export default class App extends Component {
             <Navigation />
 
             <Switch>
+              <Route exact path={ROUTES.LANDING} component={LandingPage} />
               <PublicRoute path={ROUTES.SIGN_UP} component={SignUpPage} />
               <PublicRoute path={ROUTES.SIGN_IN} component={SignInPage} />
-              <Route exact path={ROUTES.LANDING} component={LandingPage} />
-              <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgotPage} />
-              <Route path={ROUTES.DASHBOARD} component={DashboardPage} />
+              <PublicRoute path={ROUTES.PASSWORD_FORGET} component={PasswordForgotPage} />
+              <ProtectedRoute path={ROUTES.DASHBOARD} component={DashboardPage} />
               <ProtectedRoute path={ROUTES.ACCOUNT} component={AccountPage} />
               <PrivateRoute path={ROUTES.ADMIN} component={AdminPage} />
             </Switch>
