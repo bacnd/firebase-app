@@ -1,5 +1,5 @@
 {
-  "name": "fb-app",
+  "name": "firebase-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,9 +17,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "resolutions": {
-    "babel-jest": "24.7.1"
   },
   "browserslist": {
     "production": [
